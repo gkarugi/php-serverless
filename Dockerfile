@@ -6,7 +6,6 @@ RUN set -eux; \
     # add-apt-repository ppa:ondrej/php -y ; \
     # apt-get -qq update > /dev/null; \
     # apt-get -qq install php-exif php-mysql -y > /dev/null; \
-    apt-get -qq install curl zip unzip build-essential gpg-agent software-properties-common -y > /dev/null; \
     curl -fsSL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh; \
     bash /tmp/nodesource_setup.sh; \
     apt-get -qq update > /dev/null; \
