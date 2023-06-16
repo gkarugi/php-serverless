@@ -5,7 +5,7 @@ RUN set -eux; \
     apt-get -qq install curl zip unzip python3-launchpadlib build-essential gpg-agent software-properties-common lsb-release ca-certificates apt-transport-https  -y > /dev/null; \
     add-apt-repository ppa:ondrej/php -y ; \
     apt-get -qq update > /dev/null; \
-    apt-get -qq install curl zip unzip build-essential gpg-agent software-properties-common php8.1-exif php8.1-mysql -y > /dev/null; \
+    apt-get -qq install curl zip unzip build-essential gpg-agent software-properties-common php-exif php-mysql -y > /dev/null; \
     curl -fsSL https://deb.nodesource.com/setup_16.x -o /tmp/nodesource_setup.sh; \
     bash /tmp/nodesource_setup.sh; \
     apt-get -qq update > /dev/null; \
